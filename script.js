@@ -2,7 +2,7 @@
 function generateCaptcha() {
     const chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
     let captcha = '';
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 4; i++) {  // 修改为4位验证码
         captcha += chars.charAt(Math.floor(Math.random() * chars.length));
     }
     return captcha;
@@ -59,7 +59,7 @@ function drawCaptcha(captcha) {
 
     // 设置随机的扭曲效果
     for (let i = 0; i < captcha.length; i++) {
-        const x = 15 + i * 18; // 增加字符间隔
+        const x = 15 + i * 20; // 调整字符间隔为20像素
         const y = 30 + Math.random() * 5; // 控制字符的y位置
         const angle = Math.random() * 0.5 - 0.25; // 随机角度
 
