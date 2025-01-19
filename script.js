@@ -81,7 +81,7 @@ document.getElementById('submit-button').addEventListener('click', function () {
 
     if (input === captcha) {
         // 验证码正确，跳转到指定页面
-        window.location.href = "/%E8%AF%81%E4%B9%A6%E4%BF%A1%E6%81%AF.html"; // 替换为目标页面的路径
+        window.location.href = "/证书信息.html"; // 替换为目标页面的路径
     } else {
         // 验证码错误，不弹窗，只是清空输入框
         document.getElementById('captcha-input').value = '';
